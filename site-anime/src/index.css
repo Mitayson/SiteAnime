@@ -1,0 +1,161 @@
+html {
+  place-content: center;
+  background: #14141c;
+  margin: auto;
+  overflow-x: hidden;
+  text-decoration: none;
+}
+p,h1, a{
+  color: white;
+}
+
+.fundo {
+  position: absolute;
+}
+
+/* botoes */
+.cadastro img{
+  position: absolute;
+  left: 1700px;    
+  width: 80px;
+  height: 80px;
+  border: black 3px solid;
+  top: 30px;  
+}
+.hub {
+  position: absolute;
+  grid: auto;
+  color: white;
+  top: 65px;
+  left: 200px;
+  text-align: left;
+}
+
+.home {
+  position: absolute;
+  color: white;
+  top: 65px;
+  left: 340px;
+  text-align: left;
+}
+
+
+.contato a{
+  position: absolute;
+  color: white;
+  top: 65px;
+  left: 400px;
+  text-align: left;
+}
+
+
+/* imagem do anime */
+.corpo {
+  width: 320px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.imagem {
+  position: relative;
+  width: 320px;
+  height: 300px;
+}
+
+.imagem .anime-top{
+  top: 0%;
+  width: 320px;
+  height: 300px;     
+  transform: scaleX(1);
+  transition: 0.5s;
+}
+
+.imagem:hover .anime-top{
+  transform: scaleX(1);
+  z-index: 1;
+}
+
+/* texto do fundo */
+.texto-sobre-imagem-h1,
+.texto-sobre-imagem-p {
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  top: 0%;
+  width: 320px;
+  height: 300px;
+  color: white;
+  z-index: 2;
+  opacity: 0;
+  transform-origin: left;
+  transition: 0.5s;
+  transition-delay: 0.3s;
+  transform: scaleX(0);
+}
+
+.texto-sobre-imagem-h1 {
+  top: 40px;
+}
+
+.texto-sobre-imagem-p {
+  top: 180px;
+}
+
+.imagem:hover .texto-sobre-imagem-h1,
+.imagem:hover .texto-sobre-imagem-p {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+
+/* opacidade do fundo */
+.imagem .opacidade-fundo{
+  position: absolute;
+  overflow: hidden;
+  top: 0%;
+  opacity: 0;
+  background-color: black;
+  width: 320px;
+  height: 300px;
+  z-index: 1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.imagem:hover .opacidade-fundo{
+  opacity: 0.6;
+  transform: scalex(1);
+}
+
+/* lançamentos */
+
+.lancamento {
+  position: absolute;
+  text-align: center;
+  background-color: blue;
+  height: 40px;
+  width: 960px;
+  top: 480px;
+  left: 25%;
+  border-radius: 10px;
+}
+
+.ultimosLancamentos {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  top: 550px;
+  left: 300px;
+
+}
+
+.anime img {
+  width: 320px;
+  height: 200px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
